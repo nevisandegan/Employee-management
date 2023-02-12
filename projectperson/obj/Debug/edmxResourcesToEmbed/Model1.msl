@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="deletetbs">
+      <EntityTypeMapping TypeName="DBModel.deletetb">
+        <MappingFragment StoreEntitySet="deletetb">
+          <ScalarProperty Name="personnelcode" ColumnName="personnelcode" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="people">
+      <EntityTypeMapping TypeName="DBModel.person">
+        <MappingFragment StoreEntitySet="person">
+          <ScalarProperty Name="personnelcode" ColumnName="personnelcode" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="datee" ColumnName="datee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="addperosn" FunctionName="DBModel.Store.addperosn" />
+    <FunctionImportMapping FunctionImportName="deleteperson" FunctionName="DBModel.Store.deleteperson" />
+    <FunctionImportMapping FunctionImportName="selectdeletetb" FunctionName="DBModel.Store.selectdeletetb">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBModel.selectdeletetb_Result">
+          <ScalarProperty Name="personnelcode" ColumnName="personnelcode" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="selectperson" FunctionName="DBModel.Store.selectperson">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBModel.selectperson_Result">
+          <ScalarProperty Name="personnelcode" ColumnName="personnelcode" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="datee" ColumnName="datee" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="updateperosn" FunctionName="DBModel.Store.updateperosn" />
+  </EntityContainerMapping>
+</Mapping>

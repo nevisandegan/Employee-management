@@ -1,0 +1,16 @@
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\projectperson.exe.config
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\projectperson.exe
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\projectperson.pdb
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.csprojAssemblyReference.cache
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.Form1.resources
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.Properties.Resources.resources
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.csproj.GenerateResource.cache
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.csproj.CoreCompileInputs.cache
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.exe
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.pdb
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\EntityFramework.dll
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\EntityFramework.xml
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.csproj.CopyComplete
+C:\Users\nevis\Desktop\EX for every programmig language\C#\projectperson\projectperson\obj\Debug\projectperson.Form2.resources

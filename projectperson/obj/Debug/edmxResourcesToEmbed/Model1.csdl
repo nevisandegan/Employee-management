@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="deletetb">
+    <Key>
+      <PropertyRef Name="personnelcode" />
+    </Key>
+    <Property Name="personnelcode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="age" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="personnelcode" />
+    </Key>
+    <Property Name="personnelcode" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="age" Type="Int32" Nullable="false" />
+    <Property Name="datee" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="deletetbs" EntityType="Self.deletetb" />
+    <EntitySet Name="people" EntityType="Self.person" />
+    <FunctionImport Name="addperosn">
+      <Parameter Name="personnelcode" Mode="In" Type="String" />
+      <Parameter Name="firstname" Mode="In" Type="String" />
+      <Parameter Name="lastname" Mode="In" Type="String" />
+      <Parameter Name="age" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="deleteperson">
+      <Parameter Name="personnelcode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="selectdeletetb" ReturnType="Collection(DBModel.selectdeletetb_Result)">
+      <Parameter Name="personnelcode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="selectperson" ReturnType="Collection(DBModel.selectperson_Result)">
+      <Parameter Name="personnelcode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="updateperosn">
+      <Parameter Name="personnelcode" Mode="In" Type="String" />
+      <Parameter Name="firstname" Mode="In" Type="String" />
+      <Parameter Name="lastname" Mode="In" Type="String" />
+      <Parameter Name="age" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="selectdeletetb_Result">
+    <Property Type="String" Name="personnelcode" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="firstname" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="lastname" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="age" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="selectperson_Result">
+    <Property Type="String" Name="personnelcode" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="firstname" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="lastname" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="age" Nullable="false" />
+    <Property Type="DateTime" Name="datee" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>
